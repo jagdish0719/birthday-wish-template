@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Sonima Rajeevan • Birthday Experience
+  </title>
+
+  <!-- FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<audio id="music" loop>
+  <source src="assets/song.mp3" type="audio/mp3">
+</audio>
+
+<audio id="boomSound">
+  <source src="assets/cracker.mp3" type="audio/mp3">
+</audio>
+
+<audio id="countSound">
+  <source src="assets/count.mp3" type="audio/mp3">
+</audio>
+
+<body>
+
+  <div class="bg-gradient"></div>
+
+  <div class="particles"></div>
+
+
+  <!-- LOADER -->
+
+  <div class="loader" id="loader">
+
+    <div class="loader-ring"></div>
+
+    <p>
+      Preparing Something Beautiful...
+    </p>
+
+  </div>
+
+  <!-- CURSOR -->
+
+  <div class="cursor"></div>
+
+  <!-- BACKGROUND -->
+
+  <div class="bg-overlay"></div>
+
+  <div class="bg-gradient"></div>
+
+  <div class="particles"></div>
+
+
+  <!-- MUSIC PLAYER -->
+
+  <div class="music-player glass">
+
+    <button id="musicToggle">
+      ♫
+    </button>
+
+    <div class="equalizer">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </div>
+
+    <input
+      type="range"
+      id="volume"
+      min="0"
+      max="1"
+      step="0.1"
+      value="0.5"
+    >
+
+  </div>
+
+  <!-- AUDIO -->
+
+  <audio id="music" loop>
+  <source src="assets/song.mp3" type="audio/mp3">
+</audio>
+
+<audio id="countSound">
+  <source src="assets/count.mp3" type="audio/mp3">
+</audio>
+
+<audio id="boomSound">
+  <source src="assets/cracker.mp3" type="audio/mp3">
+</audio>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <p class="intro line1">
+        Some people become memories...
+      </p>
+
+      <p class="intro line2">
+        Some become important parts of life...
+      </p>
+
+      <p class="intro line3">
+        Today is about one of them.
+      </p>
+
+      <h1 class="hero-title">
+        Sonima Rajeevan 🌸
+      </h1>
+
+      <button
+        id="startJourney"
+        class="hero-btn"
+      >
+        Start Your Birthday Journey
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+
+  <section class="gallery-section">
+
+    <div class="section-heading">
+
+      <h2>
+        Moments Worth Keeping
+      </h2>
+
+      <p>
+        Some memories quietly become permanent.
+      </p>
+
+    </div>
+
+    <!-- MEMORY 1 -->
+
+    <div class="memory-card glass reveal">
+
+      <div class="memory-image">
+
+        <img src="assets/arthana.jpg" alt="">
+
+      </div>
+
+      <div class="memory-text">
+
+        <span>
+          ✨ More Than a Picture
+        </span>
+
+        <h3>
+          Sonima & Arthana
+        </h3>
+
+        <p>
+          Some friendships become comfort without even trying.
+          Every random laugh somehow became a permanent memory.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- MEMORY 2 -->
+
+    <div class="memory-card reverse glass reveal">
+
+      <div class="memory-image">
+
+        <img src="assets/sasidevi.jpg" alt="">
+
+      </div>
+
+      <div class="memory-text">
+
+        <span>
+          💫 Feels like home
+        </span>
+
+        <h3>
+          Sonima & Sasidevi
+        </h3>
+
+        <p>
+          Best friend in my life — she is truly a gem I was lucky to find.
+She always supports me in every situation.
+If I am the person I am today, she is one of the main reasons behind it.
+She is someone really special in my life.
+
+— Sasidevi
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- MEMORY 3 -->
+
+    <div class="memory-card glass reveal">
+
+      <div class="memory-image">
+
+        <img src="assets/sangavi.jpg" alt="">
+
+      </div>
+
+      <div class="memory-text">
+
+        <span>
+          🌙 Unexpectedly Special
+        </span>
+
+        <h3>
+          Sonima & Sangavi
+        </h3>
+
+        <p>
+          I usually don’t get close to people that easily, but I don’t even know how I became so close with Sonu akka. My bond with her feels deeper and more special than with anyone else. She is my ⭐ sister 😘
+– Sangavi
+        </p>
+
+      </div>
+
+    </div>
+
+  <!-- MEMORY 4 -->
+
+<div class="memory-card reverse glass reveal">
+
+  <div class="memory-image">
+
+    <img src="assets/dhandapani.jpg" alt="">
+
+  </div>
+
+  <div class="memory-text">
+
+    <span>
+      🤍 A little piece of my heart
+    </span>
+
+    <h3>
+      Sonima & Dhandapani
+    </h3>
+
+    <p>
+      Some memories don’t need long paragraphs to feel special.
+      Some people become important silently,
+      without dramatic moments,
+      without explanations.
+    </p>
+
+  </div>
+
+</div>
+
+  </section>
+
+  <!-- FAVORITES -->
+
+  <section class="favorites-section">
+
+    <div class="section-heading">
+
+      <h2>
+        Things She Loves 💖
+      </h2>
+
+    </div>
+
+    <div class="favorites-grid">
+
+      <div class="favorite reveal glass">
+
+  <div class="emoji">🎵</div>
+
+  <div class="content">
+
+    <div class="label">
+      Favorite Song
+    </div>
+
+    <div class="value">
+      Aaradhike (Ambili)
+    </div>
+
+  </div>
+
+</div>
+
+      <div class="favorite reveal glass">
+
+  <div class="emoji">🎬</div>
+
+  <div class="content">
+
+    <div class="label">
+      Favorite Movie
+    </div>
+
+    <div class="value">
+      Home
+    </div>
+
+  </div>
+
+</div>
+
+      <!-- FAVORITE BOOK -->
+
+<div class="favorite reveal glass">
+
+  <div class="emoji">📚</div>
+
+  <div class="content">
+
+    <div class="label">
+      Favorite Book
+    </div>
+
+    <div class="value">
+      Dhaivathinte Charanmar <br>
+      <span>( Author - Joseph Annamkutti Jose )</span>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- FAVORITE SPORT -->
+
+<div class="favorite reveal glass">
+
+  <div class="emoji">🏸</div>
+
+  <div class="content">
+
+    <div class="label">
+      Favorite Sport
+    </div>
+
+    <div class="value">
+      Football
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- FAVORITE DANCER -->
+
+<div class="favorite reveal glass">
+
+  <div class="emoji">💃</div>
+
+  <div class="content">
+
+    <div class="label">
+      Favorite Dancer
+    </div>
+
+    <div class="value">
+      Shazeb Sheik, <br>
+      Sonal, <br>
+      Rukmini Vijayakumar
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- FAVORITE FOOD -->
+
+<div class="favorite reveal glass">
+
+  <div class="emoji">🍕</div>
+
+  <div class="content">
+
+    <div class="label">
+      Favorite Food
+    </div>
+
+    <div class="value">
+      Biriyani & Sadhya (Meals)
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- FAVORITE PLACE -->
+
+<div class="favorite reveal glass">
+
+  <div class="emoji">🌍</div>
+
+  <div class="content">
+
+    <div class="label">
+      Favorite Place
+    </div>
+
+    <div class="value">
+      Switzerland
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- FAVORITE HABIT -->
+
+<div class="favorite reveal glass">
+
+  <div class="emoji">☕</div>
+
+  <div class="content">
+
+    <div class="label">
+      Favorite Habit
+    </div>
+
+    <div class="value">
+      Sitting quietly, thinking about everyone,
+      and cherishing beautiful memories.
+    </div>
+
+  </div>
+
+</div>
+
+
+    </div>
+
+  </section>
+
+  <!-- SARATH -->
+
+  <section class="sarath-section">
+
+    <div class="sarath-box glass reveal">
+
+      Some friendships never truly disappear.
+      Maybe one day Sarath will speak with you again
+      and bring back those old memories.
+
+    </div>
+
+  </section>
+
+  <!-- WISHES -->
+
+  <section class="wishes-section">
+
+    <div class="section-heading">
+
+      <h2>
+        Messages Waiting For You
+      </h2>
+
+      <p>
+        Unlock them one by one.
+      </p>
+
+    </div>
+
+    <div class="wish-grid">
+
+      <!-- CARD 1 -->
+
+      <div class="wish-card active-card" data-order="1">
+
+        <div class="wish-inner">
+
+          <div class="wish-front glass">
+            Arthana
+          </div>
+
+          <div class="wish-back">
+            Happy birthday Sonima 🌸
+            Never lose the warmth you bring into people’s lives.
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+
+      <div class="wish-card locked" data-order="2">
+
+        <div class="wish-inner">
+
+          <div class="wish-front glass">
+            🔒 Sasidevi
+          </div>
+
+          <div class="wish-back">
+            Wish you many more happy returns of the day dear sonu..... happy forever God blessed you........😍😍😍 Ne epavum happy ah irukanum...namma ella years um un bdy va celebrate pananum ....u r my best friend forever.... Epavum happy ah iru..🫂🫂🫂🫂
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+
+      <div class="wish-card locked" data-order="3">
+
+        <div class="wish-inner">
+
+          <div class="wish-front glass">
+            🔒 Sangavi
+          </div>
+
+          <div class="wish-back">
+           Welcome to 26! wish you many more happy returns of the day sonu akkaa🫂
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 4 -->
+
+      <div
+        class="wish-card locked jagi-card"
+        data-order="4"
+        id="jagiCard"
+      >
+
+        <div class="wish-inner">
+
+          <div class="wish-front glass">
+            🔒 Jagi ✨
+          </div>
+
+          <div class="wish-back">
+            One final surprise remains...
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- COUNTDOWN -->
+
+  <section
+    class="countdown hidden"
+    id="countdownSection"
+  >
+
+    <p>
+      One final surprise remains...
+    </p>
+
+    <h1 id="countNumber">
+      5
+    </h1>
+
+  </section>
+
+  <!-- FINAL -->
+
+  <section
+    class="final-section hidden"
+    id="finalSection"
+  >
+
+    <canvas id="fireworks"></canvas>
+
+    <div class="final-content">
+
+      <h1>
+        HAPPY BIRTHDAY<br>
+        SONIMA RAJEEVAN 🎉
+      </h1>
+
+      <h3>
+        From Jagi ❤️
+      </h3>
+
+      <p id="finalMessage"></p>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
