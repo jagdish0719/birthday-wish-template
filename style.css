@@ -23,6 +23,9 @@ body{
   color:white;
   overflow-x:hidden;
   font-family:'Inter',sans-serif;
+
+  -webkit-tap-highlight-color: transparent;
+
 }
 
 /* =========================
@@ -659,10 +662,17 @@ section{
 }
 
 .final-content{
+
   position:relative;
+
   z-index:5;
+
   max-width:1000px;
+
+
 }
+
+
 
 .final-content h1{
   font-size:5rem;
@@ -678,9 +688,25 @@ section{
 }
 
 .final-content p{
-  margin-top:40px;
-  line-height:2;
+
+  margin-top:35px;
+
+  line-height:1.7;
+
   color:#eee;
+
+  width:85%;
+
+  max-width:1200px;
+
+  margin-left:auto;
+
+  margin-right:auto;
+
+  text-align:center;
+
+  font-size:1.05rem;
+
 }
 
 #fireworks{
@@ -728,8 +754,19 @@ section{
   }
 
   .final-content h1{
-    font-size:3rem;
-  }
+
+  font-size:6rem;
+
+  font-family:'Cormorant Garamond',serif;
+
+  letter-spacing:4px;
+
+  line-height:1.1;
+
+  text-shadow:
+  0 0 40px rgba(255,79,216,0.55);
+
+}
 
   .countdown h1{
     font-size:7rem;
@@ -750,4 +787,60 @@ section{
   letter-spacing:2px;
 
   opacity:0.9;
+}
+
+.memory-card:hover,
+.favorite:hover,
+.wish-card:hover{
+
+  box-shadow:
+  0 0 40px rgba(255,79,216,0.18);
+
+}
+
+.ending-line{
+
+  margin-top:40px;
+
+  color:#aaa;
+
+  letter-spacing:3px;
+
+  font-size:0.85rem;
+
+}
+
+.memory-wrapper{
+    position:relative;
+}
+
+.memoryScratch{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:50;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.scratchMessage{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:60;
+
+    text-align:center;
+
+    font-size:32px;
+    font-weight:700;
+
+    color:white;
+
+    text-shadow:
+    0 0 15px rgba(0,0,0,.6);
+
+    pointer-events:none;
 }
